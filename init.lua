@@ -33,11 +33,11 @@ vim.cmd([[
 ]])
 
 -- Add an autocmd to detect and set the filetype for ansible files
-vim.cmd[[
+vim.cmd [[
   autocmd BufRead,BufNewFile **/(ansible)*/**/(?!files)*.y*ml set filetype=yaml.ansible
 ]]
 
-vim.cmd[[
+vim.cmd [[
   autocmd BufRead,BufNewFile **/(production-deployment)*/**/*.y*ml set filetype=yaml.ansible
 ]]
 

@@ -1,3 +1,5 @@
+--- enable catppuccino colorscheme
+
 for _, source in ipairs {
   "astronvim.bootstrap",
   "astronvim.options",
@@ -32,7 +34,11 @@ vim.cmd([[
 
 -- Add an autocmd to detect and set the filetype for ansible files
 vim.cmd[[
-  autocmd BufRead,BufNewFile **/ansible*/* set filetype=yaml.ansible
+  autocmd BufRead,BufNewFile **/(ansible)*/**/(?!files)*.y*ml set filetype=yaml.ansible
+]]
+
+vim.cmd[[
+  autocmd BufRead,BufNewFile **/(production-deployment)*/**/*.y*ml set filetype=yaml.ansible
 ]]
 
 vim.g.tabby_server_url = "https://tabby.exsplash.it"

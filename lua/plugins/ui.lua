@@ -41,6 +41,7 @@ return {
         String = "󰀬",
         TypeParameter = "󰊄",
         Unit = "",
+        Copilot = "",
       },
     },
     enabled = vim.g.icons_enabled,

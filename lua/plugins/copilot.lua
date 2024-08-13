@@ -22,38 +22,6 @@ return {
       }
     end,
   },
-  -- why this not working?
-  -- {
-  --   "zbirenbaum/copilot.lua",
-  --   build = ":Copilot auth",
-  --   module = "copilot",
-  --   -- cmd = "Copilot",
-  --   opts = {
-  --     suggestion = {
-  --       enabled = false,
-  --       keymap = {
-  --         accept = "<C-K>",
-  --         accept_word = false,
-  --         accept_line = "<C-I>"
-  --       }
-  --     },
-  --     panel = {
-  --       enabled = false,
-  --       auto_refresh = false,
-  --       keymap = {
-  --         accept = "<CR>",
-  --         refresh = "gr",
-  --         open = "<leader>bk",
-  --       },
-  --       layout = {
-  --         position = "right",
-  --         ratio = 0.4,
-  --       }
-  --     },
-  --     copilot_node_command = "node",
-  --     server_opts_overrides = {},
-  --   }
-  -- },
   {
     "zbirenbaum/copilot.lua",
     build = ":Copilot auth",

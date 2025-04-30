@@ -1,4 +1,4 @@
-if true then return end -- WARN: REMOVE THIS LINE TO ACTIVATE THIS FILE
+-- if true then return end -- WARN: REMOVE THIS LINE TO ACTIVATE THIS FILE
 
 -- This will run last in the setup process and is a good place to configure
 -- things like custom filetypes. This just pure lua so anything that doesn't
@@ -7,12 +7,19 @@ if true then return end -- WARN: REMOVE THIS LINE TO ACTIVATE THIS FILE
 -- Set up custom filetypes
 vim.filetype.add {
   extension = {
-    foo = "fooscript",
+    tf = "terraform",
   },
   filename = {
-    ["Foofile"] = "fooscript",
+    ["Dockerfile"] = "dockerfile",
+    [".gitlab-ci.yml"] = "yaml.gitlab-ci",
   },
   pattern = {
-    ["~/%.config/foo/.*"] = "fooscript",
+    ["**/**/chart/.*"] = "helm",
+    ["**/**/tasks/.*.y*ml"] = "yaml.ansible",
+    ["**/**/playbooks/.*.y*ml"] = "yaml.ansible",
+    ["**/**/roles/.*.y*ml"] = "yaml.ansible",
+    ["**/**/templates/.*.y*ml"] = "yaml.ansible",
+    ["**/**/vars/.*.y*ml"] = "yaml.ansible",
+    ["**/**/defaults/.*.y*ml"] = "yaml.ansible",
   },
 }

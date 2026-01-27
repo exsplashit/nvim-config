@@ -4,6 +4,9 @@
 -- things like custom filetypes. This just pure lua so anything that doesn't
 -- fit in the normal config locations above can go here
 
+-- File encodings for Chinese support
+vim.opt.fileencodings = "utf-8,gbk,gb18030,gb2312,ucs-bom"
+
 -- Set up custom filetypes
 vim.filetype.add {
   extension = {

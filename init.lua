@@ -15,6 +15,20 @@ if not pcall(require, "lazy") then
   vim.cmd.quit()
 end
 
+vim.g.clipboard = {
+  name = 'myClipboard',
+  copy = {
+    ['+'] = { 'pbcopy' },
+    ['*'] = { 'pbcopy' },
+  },
+  paste = {
+    ['+'] = { 'pbpaste' },
+    ['*'] = { 'pbpaste' },
+  },
+  cache_enabled = 1,
+}
+
+
 require "lazy_setup"
 require "polish"
 require "notify-fix"

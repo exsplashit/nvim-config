@@ -16,7 +16,6 @@ return {
         "bashls",
         "gopls",
         "pyright",
-        "pylsp",
         "terraformls",
         "tflint",
         -- "tslint",
